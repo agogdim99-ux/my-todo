@@ -1,0 +1,19 @@
+# 비밀값 (Supabase 접속 키) - 절대 올리지 않기
+.env
+.env.*
+!.env.example
+
+# 내 컴퓨터의 DB 파일 - 올리지 않기
+todo.db
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# 기타
+node_modules/
+.DS_Store
+Thumbs.db
+
+# 키 넣기용 일회용 파일 (키가 들어 있음)
+cloud-supabase/setup-key.bat

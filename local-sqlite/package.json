@@ -1,0 +1,9 @@
+{
+  "name": "my-todo-local",
+  "version": "1.0.0",
+  "description": "길 A - 로컬 SQLite에 저장하는 Todo 앱 (설치할 패키지 없음)",
+  "main": "server.js",
+  "scripts": { "start": "node --disable-warning=ExperimentalWarning server.js" },
+  "engines": { "node": ">=22.13" },
+  "license": "MIT"
+}

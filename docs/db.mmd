@@ -1,0 +1,31 @@
+erDiagram
+    users ||--o{ categories : "가진다 (클라우드만)"
+    users ||--o{ todos : "가진다 (클라우드만)"
+    categories |o--o{ todos : "분류한다 (1개 카테고리 : 여러 할 일)"
+
+    users {
+        uuid id PK "Supabase Auth가 관리 (길 B)"
+        text email "로그인 이메일"
+    }
+    categories {
+        int id PK "번호 (자동)"
+        text name "이름 - 예: 공부 (같은 이름 중복 X)"
+        text emoji "이모지 - 예: 📚"
+        text color "색 - 예: #7c6cf2"
+        uuid user_id FK "주인 (길 B에서 추가)"
+    }
+    todos {
+        int id PK "번호 (자동)"
+        text title "할 일 제목 (필수)"
+        text memo "메모 (선택)"
+        text priority "우선순위: high/normal/low (높음/보통/낮음)"
+        bool done "완료 여부"
+        date due_date "마감일 (선택)"
+        datetime created_at "만든 날짜 (자동)"
+        datetime completed_at "완료한 날짜 (체크할 때 자동)"
+        text mood "완료 기분: 😊 😐 😫 (체크할 때 고름)"
+        int estimated_minutes "예상 소요 시간(분)"
+        int postpone_count "미룬 횟수 (⏭ 내일로 버튼 누를 때 +1)"
+        int category_id FK "카테고리 (없어도 됨, 카테고리 지우면 미분류)"
+        uuid user_id FK "주인 (길 B에서 추가)"
+    }

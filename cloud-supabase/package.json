@@ -1,0 +1,12 @@
+{
+  "name": "my-todo-cloud",
+  "version": "1.0.0",
+  "description": "길 B - Supabase에 저장하는 Todo 앱 (설치할 패키지 없음)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "rls-test": "node rls-test.js"
+  },
+  "engines": { "node": ">=22.13" },
+  "license": "MIT"
+}
