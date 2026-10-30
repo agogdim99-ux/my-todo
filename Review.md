@@ -1,8 +1,8 @@
+# Review.md — ART (Agent Review Template)
+
 # AIFFEL Campus Agent Code Review Templete
 - 개발자 : 이주연
 - 리뷰어 : 강승만
-
-# Review.md — ART (Agent Review Template)
 
 - 리뷰 대상: https://github.com/victorymankang-dot/my-todo (과제: 내 Todo 앱과 PRD)
 - 리뷰 방식: 레포 전체 클론 후 `server.js`, `validate.js`, `supabase-setup.sql`, `.gitignore`, PRD, 체크리스트를 직접 읽음
