@@ -1,3 +1,7 @@
+# AIFFEL Campus Agent Code Review Templete
+- 개발자 : 이주연
+- 리뷰어 : 강승만
+
 # Review.md — ART (Agent Review Template)
 
 - 리뷰 대상: https://github.com/victorymankang-dot/my-todo (과제: 내 Todo 앱과 PRD)
